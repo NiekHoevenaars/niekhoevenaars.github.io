@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-image: url('lego-muur-donker.png');
+            }
+            body {
+                color: #fff;
+            }
+            body {
+                font-family: Comic Sans MS, Comic Sans, cursive;
+            }
+            h1 {
+                text-align: center;
+            }
+            h4 {
+                text-align: right;
+            }
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+            .item1 {
+                grid-area: hoofd; 
+            }
+            .item2 {
+                grid-area: links;
+            }
+            .item3 {
+                grid-area: linksmidden; 
+            }
+            .item4 {
+                grid-area: rechtsmidden; 
+            }
+            .item5 {
+                grid-area: rechts; 
+            }
+            .item6 {
+                grid-area: midden; 
+            }
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'hoofd hoofd hoofd hoofd hoofd'
+                    'links linksmidden midden rechtsmidden rechts';
+                grid-gap: 10px;
+                padding: 10px;
+            }
+            .grid-container > div {
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>  
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="geschiedenis.html">Geschiedenis</a>
+            <a href="kwaliteit.html">Kwaliteit</a>
+            <a href="legoland.html">Legoland</a>
+            <a href="tabel.html">Tabel</a>
+        </div>
+        <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }  
+        </script>  
+        <div class="grid-container">
+            <div class="item1">
+                <h1 style=font-size:50px> Welkom op deze site met wat informatie over lego</h1>
+            </div>
+            <div class="item2">
+                <a href="https://www.lego.com/nl-nl">
+                    <img border="0" src="lego-logo.png" width="265" height="265">
+                </a>
+            </div>
+            <div class="item3">
+                <img border="2" alt="QR code lego.com" src="qr-code-lego-site.png" width="250" height="250">
+            </div>  
+            <div class="item4">
+                <img border="2" alt="QR code the lego story" src="qr-code-the-lego-story.png" width="250" height="250">
+            </div>  
+            <div class="item5">
+                <a href="https://www.youtube.com/watch?v=qr_dTySMl7s"> 
+                    <img border="0" alt="Filmpje over hoe LEGO tot stand kwam" src="the-lego-story.png" width="480" height="265">
+                </a>
+            </div>
+            <div class="item6">&nbsp; &nbsp;
+            </div>
+        </div>
+        <h4 style=font-size:15px> Deze site is gemaakt door Niek Hoevenaars</h4>
+    </body>
+</html>

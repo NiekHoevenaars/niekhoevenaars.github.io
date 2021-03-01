@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Legoland</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-image: url('lego-muur-donker.png');
+            }
+            body {
+                color: #fff;
+            }
+            body {
+                font-family: Comic Sans MS, Comic Sans, cursive;
+            }
+            h1 {
+                text-align: center;
+            }
+            h4 {
+                text-align: right;
+            }
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+            table {
+                width:100%;
+            }
+            #t01 tr:nth-child(even) {
+                color: black;
+                background-color: #eee;
+            }
+            #t01 tr:nth-child(odd) {
+                color: black;
+                background-color: #fff;
+            }
+            #t01 th {
+                color: white;
+                background-color: #666;
+            }
+            #t01 table, th, td {
+                border: 2px solid #bbb;
+                border-collapse: collapse;
+            }
+            #t01 th, td {
+                padding: 15px;
+                text-align: left;
+            }
+            #t01 th {
+                border-bottom: 3px solid #bbb;
+            }
+
+            #t02 table, th, td {
+                border: 0px;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="geschiedenis.html">Geschiedenis</a>
+            <a href="kwaliteit.html">Kwaliteit</a>
+            <a href="legoland.html">Legoland</a>
+            <a href="tabel.html">Tabel</a>
+        </div>
+        <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }  
+        </script>
+        <h1 style=font-size:40px>Legoland</h1>
+        &nbsp;
+        &nbsp;
+        <h1>
+            Geschiedenis
+        </h1>
+        <h2>
+            Het begin
+        </h2>
+        <p>
+            In 1968 werd in het Deense Billund het eerste Legolandpark geopend. Dit themapark bestond in het begin uit een miniatuurwereld, volledig opgebouwd uit legosteentjes. Er reden legotreinen, -auto's 
+            en -vliegtuigen en er waren veel bekende bouwwerken nagebouwd. Het park bleek een enorm succes: alleen al het eerste jaar kwamen er ruim een half miljoen bezoekers. In de daaropvolgende jaren 
+            groeide het park en intussen is het al achtmaal zo groot als oorspronkelijk. Inmiddels kent elke locatie van Legoland deze miniatuurwereld genaamd Miniland.
+        </p>
+        <h2>
+            Jaren 90
+        </h2>
+        <p>In de jaren 90 opende twee nieuwe locaties van Legoland. Legoland Windsor opende in 1996 op de locatie waar zich voorheen het Windsor Safari Park bevond. Op 20 maart 1999 opende Legoland 
+            Californië de deuren voor bezoekers. De eerste locatie van Legoland buiten Europa.
+        </p>
+        <h2>
+            Jaren 00
+        </h2>
+        <p>
+            In de jaren 00 opende er een nieuwe locatie van Legoland. Legoland Deutschland opende haar deuren op in 2002. De derde locatie in Europa. Ondanks het aanvankelijke succes van het Legoland 
+            Billund, bleek het moeilijk om deze parken winstgevend te maken. In juni 2005 kocht de Blackstone Group, een investeringsbedrijf uit New York, 70% van de aandelen van de vier parken en bracht 
+            deze onder in de merknaam Merlin Entertainments Group. De LEGO Group behield 30% van de aandelen. In 2007 opende de eerste locatie van het Legoland Discovery Center in het Duitse Berlijn, een 
+            nieuw concept.
+        </p>
+        <h2>
+            Jaren 10
+        </h2>
+        <p>
+            Sinds de overname van de Legoland parken opende zes jaar later, op 15 oktober 2011, Legoland Florida. De tweede locatie van Legoland in de Verenigde Staten. Legoland Florida werd gebouwd op het 
+            terrein van het voormalige Cypress Gardens Adventure Park. Hierna volgde nog drie locaties van het park in Azië: Legoland Maleisië (2012), Legoland Dubai (2016) en Legoland Japan (2017).
+        </p>
+        &nbsp;
+        &nbsp;
+        <h1>
+            Locaties
+        </h1>
+        <table id="t02">
+            <td>
+                <p>Huidige locaties</p>
+                <table id="t01">
+                    <tr>
+                        <th>Naam</th>
+                        <th>Locatie</th>
+                        <th>Geopend</th>
+                    </tr>
+                    <tr>
+                        <td>Legoland Billund</td>
+                        <td>Billund - Denemarken</td>
+                        <td>7 juni 1968</td>
+                    </tr>
+                    <tr>
+                        <td>Legoland Windsor</td>
+                        <td>Windsor - Verenigd Koninkrijk</td>
+                        <td>Maart 1996</td>
+                    </tr>
+                    <tr>
+                        <td>Legoland Californië</td>
+                        <td>Carlsbad - Verenigde Staten</td>
+                        <td>20 maart 1999</td>
+                    </tr>
+                    <tr>
+                        <td>Legoland Deutschland</td>
+                        <td>Günzburg - Duitsland</td>
+                        <td>Mei 2002</td>
+                    </tr>
+                    <tr>
+                        <td>Legoland Florida</td>
+                        <td>Winter Haven - Verenigde Staten</td>
+                        <td>15 oktober 2011</td>
+                    </tr>
+                    <tr>
+                        <td>Legoland Maleisië</td>
+                        <td>Nusajaya - Maleisië</td>
+                        <td>15 september 2012</td>
+                    </tr>
+                    <tr>
+                        <td>Legoland Dubai</td>
+                        <td>Dubai - Verenigde Arabische Emiraten</td>
+                        <td>31 oktober 2016</td>
+                    </tr>
+                    <tr>
+                        <td>Legoland Japan</td>
+                        <td>Nagoya - Japan</td>
+                        <td>1 april 2017</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <p>Locaties in aanbouw</p>
+                <table id="t01">
+                    <tr>
+                        <th>Naam</th>
+                        <th>Locatie</th>
+                        <th>Verwachte opening</th>
+                    </tr>
+                    <tr>
+                        <td>Legoland Korea</td>
+                        <td>Chuncheon - Zuid-Korea</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>Legoland Shanghai</td>
+                        <td>Shanghai - China</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>Legoland New York</td>
+                        <td>Goshen - Verenigde Staten</td>
+                        <td>2021</td>
+                    </tr>
+                </table>
+                <table id="t02">
+                    <td></td>
+                </table>
+                <p>Voormalige locaties</p>
+                <table id="t01">
+                    <tr>
+                        <th>Naam</th>
+                        <th>Locatie</th>
+                        <th>Openingsjaren</th>
+                    </tr>
+                    <tr>
+                        <td>Legoland</td>
+                        <td>Sierksdorf - Duitsland</td>
+                        <td>1973 t/m 1976</td>
+                    </tr>
+                </table>
+            </td>
+        </table>
+        <h4 style=font-size:15px> Deze site is gemaakt door Niek Hoevenaars</h4>
+    </body>
+</html>

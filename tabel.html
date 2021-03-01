@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabel</title>
+        <style>
+            body {
+                background-image: url('lego-muur-donker.png');
+            }
+            body {
+                color: #fff;
+            }
+            body {
+                font-family: Comic Sans MS, Comic Sans, cursive;
+            }
+            h1 {
+                text-align: center;
+            }
+            h4 {
+                text-align: right;
+            }
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+            table {
+                width:100%;
+            }
+            #t01 tr:nth-child(even) {
+                color: black;
+                background-color: #eee;
+            }
+            #t01 tr:nth-child(odd) {
+                color: black;
+                background-color: #fff;
+            }
+            #t01 th {
+                color: white;
+                background-color: #666;
+            }
+            #t01 table, th, td {
+                border: 2px solid #bbb;
+                border-collapse: collapse;
+            }
+            #t01 th, td {
+                padding: 15px;
+                text-align: left;
+            }
+            #t01 th {
+                border-bottom: 3px solid #bbb;
+            }
+
+            #t02 table, th, td {
+                border: 0px;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="geschiedenis.html">Geschiedenis</a>
+            <a href="kwaliteit.html">Kwaliteit</a>
+            <a href="legoland.html">Legoland</a>
+            <a href="tabel.html">Tabel</a>
+        </div>
+        <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }  
+        </script>
+        <h1 style=font-size:40px> Tabel </h1>
+        <table id="t02">
+            <td>
+                <table id="t01">
+                    <tr>
+                        <th>Thema's A tot F</th>
+                        <th>Periode</th>
+                    </tr>
+                    <tr>
+                        <td>LEGO Adventures</td>
+                        <td>1998 - 1999</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Agents</td>
+                        <td>2008 - 2010</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Alpha Team</td>
+                        <td>2001 - 2005</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Amazone</td>
+                        <td>1999</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Aqua Raiders</td>
+                        <td>2007 - 2009</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Architecture</td>
+                        <td>2008 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Atlantis</td>
+                        <td>2010 - 2011</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Batman</td>
+                        <td>2006 - 2008</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Belville</td>
+                        <td>1994 - 2009</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Bionicle</td>
+                        <td>2001 - 2010, 2015</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO BrickHeadz</td>
+                        <td>2016 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Cars</td>
+                        <td>2011 - 2012</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Castle</td>
+                        <td>2007 - 2010, 2013 - 2014</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO City</td>
+                        <td>2005 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Creator</td>
+                        <td>2003 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Dino</td>
+                        <td>2012</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Dino Attack</td>
+                        <td>2005</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Dino Island</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Disney Princess</td>
+                        <td>2014 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Duplo</td>
+                        <td>1969 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Elves</td>
+                        <td>2015 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Exo-Force</td>
+                        <td>2006 - 2008</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Fabuland</td>
+                        <td>1979 - 1989</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table id="t01">
+                    <tr>
+                        <th>Thema's F tot P</th>
+                        <th>Periode</th>
+                    </tr>
+                    <tr>
+                        <td>LEGO Friends</td>
+                        <td>2012 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Harry Potter</td>
+                        <td>2001 - 2007, 2010 - 2011, 2018</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Hero Factory</td>
+                        <td>2010 - 2014</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Ideas</td>
+                        <td>2008 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Indiana Jones</td>
+                        <td>2008 - 2009</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Jurassic World</td>
+                        <td>2015, 2018</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Kingdoms</td>
+                        <td>2010 - 2012</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Knights Kingdom</td>
+                        <td>2000, 2004 - 2006</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Legends of Chima</td>
+                        <td>2013 - 2015</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Legoland</td>
+                        <td>1981 - 1990</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Lord of the Rings</td>
+                        <td>2012 - 2013</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Mars Mission</td>
+                        <td>2007 - 2008</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Mindstorms</td>
+                        <td>1998 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Minecraft</td>
+                        <td>2013 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Mixels</td>
+                        <td>2014 - 2016</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Modulaire Gebouwen</td>
+                        <td>2007 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Monsterfighters</td>
+                        <td>2012</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Nexo Knights</td>
+                        <td>2016 - 2018</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Ninja</td>
+                        <td>1998 - 2000</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Ninjago</td>
+                        <td>2011 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Orient Expedition</td>
+                        <td>2003</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Paradisa</td>
+                        <td>1992 - 1997</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Pirates</td>
+                        <td>1989 - 1997, 2009 - 2010, 2015</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table id="t01">
+                    <tr>
+                        <th>Thema's P tot Z</th>
+                        <th>Periode</th>
+                    </tr>
+                    <tr>
+                        <td>LEGO Pirates of the Caribbean</td>
+                        <td>2011</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Power Miners</td>
+                        <td>2009 - 2011</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Prince of Persia</td>
+                        <td>2010</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Racers</td>
+                        <td>2005 - 2014</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Rock Raiders</td>
+                        <td>1999 - 2000</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Simpsons</td>
+                        <td>2014 - 2015</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Space Police</td>
+                        <td>1989, 1992 - 1993, 2009 - 2010</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Speed Champions</td>
+                        <td>2015 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO SpongeBob SquarePants</td>
+                        <td>2006 - 2012</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Star Wars</td>
+                        <td>1999 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Super Heroes</td>
+                        <td>2012 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Systems</td>
+                        <td>1989 - 1999</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Technic</td>
+                        <td>1977 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Teenage Mutant Ninja Turtles</td>
+                        <td>2013 - 2014</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO The Hobbit</td>
+                        <td>2012 - 2014</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO The LEGO Movie</td>
+                        <td>2014 - 2015</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO The Lone Ranger</td>
+                        <td>2013</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Toy Story</td>
+                        <td>2010</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Ultra Agents</td>
+                        <td>2014 - 2015</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Vikings</td>
+                        <td>2005 - 2006</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO Winterdorp</td>
+                        <td>2009 - heden</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO World City</td>
+                        <td>2000 - 2005</td>
+                    </tr>
+                    <tr>
+                        <td>LEGO ZNAP</td>
+                        <td>1998 - 1999</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>(alleen voor symmetrie)</td>
+                        <td>|</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </td>
+        </table>
+        <h4 style=font-size:15px> Deze site is gemaakt door Niek Hoevenaars</h4>
+    </body>
+</html>
+

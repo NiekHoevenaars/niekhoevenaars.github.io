@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kwaliteit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-image: url('lego-muur-donker.png');
+            }
+            body {
+                color: #fff;
+            }
+            body {
+                font-family: Comic Sans MS, Comic Sans, cursive;
+            }
+            h1 {
+                text-align: center;
+            }
+            h4 {
+                text-align: right;
+            }
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="geschiedenis.html">Geschiedenis</a>
+            <a href="kwaliteit.html">Kwaliteit</a>
+            <a href="legoland.html">Legoland</a>
+            <a href="tabel.html">Tabel</a>
+        </div>
+        <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }  
+        </script>
+        <h1 style=font-size:40px>Kwaliteit</h1>
+        <p>
+            Vanaf het moment dat de populariteit begon te stijgen, werden de kwaliteitseisen hoger. De makers van LEGO ontwierpen "De 10 Geboden van LEGO", waarop de fabricage altijd zou worden afgesteld. 
+            Deze 10 geboden worden tot op heden gewaarborgd en nog steeds gerespecteerd bij het ontwerpen van nieuwe legostenen. De "Geboden" houden onder andere het volgende in:
+        </p>
+        <ul>
+            <li>Zowel jongens als meisjes moeten met dezelfde LEGO kunnen spelen.</li>
+            <li>Per ontworpen blokje moet er een zeer groot aantal bouwmogelijkheden blijven; zes standaard bouwstenen (afmeting 2×4) zijn op 915.103.765 verschillende manieren te combineren.</li>
+            <li>Legoblokjes moeten identiek zijn in afmetingen; de mallen die de stenen 'persen' hebben een afwijking van maximaal 0,002 mm. (Toen LEGO startte met het maken van de plastic blokjes, was dit 
+                "slechts" 0,005 mm).</li>
+            <li>LEGO moet inventief zijn en de verbeelding mag de enige beperking zijn. Dit is overigens ook een slagzin van LEGO: "je verbeelding is de enige beperking".</li>
+            <li>LEGO moet duurzaam zijn, wat betekent dat de kleur en de vorm van een bouwsteen niet mogen veranderen.</li>
+        </ul>
+        <h4 style=font-size:15px> Deze site is gemaakt door Niek Hoevenaars</h4>
+    </body>
+</html>
